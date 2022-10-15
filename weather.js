@@ -30,8 +30,6 @@ let weather = {
       document.querySelector(".temp").innerText = temp + "°C";
       document.querySelector(".hi-low").innerHTML = data.main.temp_min +"°C/ "+ data.main.temp_max+"°C";
       document.querySelector(".weather").classList.remove("loading");
-      document.body.style.backgroundImage =
-      "url('https://source.unsplash.com/1600x900/?climate')";
     },
     search: function () {
       this.fetchWeather(document.querySelector(".search-bar").value);
