@@ -26,7 +26,7 @@ let weather = {
       document.querySelector(".city").innerText = "Weather in " + name;
       document.querySelector(".icon").src =
         "https://openweathermap.org/img/wn/" + icon + ".png";
-      document.querySelector(".date").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+      document.querySelector(".date").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" , "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
       document.querySelector(".temp").innerText = temp + "°C";
       document.querySelector(".hi-low").innerHTML = data.main.temp_min +"°C/ "+ data.main.temp_max+"°C";
       document.querySelector(".weather").classList.remove("loading");
