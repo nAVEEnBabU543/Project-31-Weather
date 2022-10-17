@@ -54,4 +54,4 @@ document
     }
   });
 
-  weather.fetchWeather("Kakinada");
+  weather.fetchWeather("Hyderabad");
